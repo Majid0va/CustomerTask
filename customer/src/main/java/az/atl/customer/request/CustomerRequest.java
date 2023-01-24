@@ -29,4 +29,3 @@ public class CustomerRequest {
     @ValidPinCode
     private String pinCode;
 }
-

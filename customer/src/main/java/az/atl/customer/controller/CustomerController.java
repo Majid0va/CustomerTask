@@ -1,6 +1,5 @@
 package az.atl.customer.controller;
 
-
 import az.atl.customer.dto.CustomerDto;
 import az.atl.customer.request.CustomerRequest;
 import az.atl.customer.service.CustomerService;
@@ -13,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api")
+@RequestMapping("/api/v1")
 public class CustomerController {
     private final CustomerService customerService;
 

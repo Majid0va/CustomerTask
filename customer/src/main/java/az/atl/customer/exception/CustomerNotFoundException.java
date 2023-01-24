@@ -5,6 +5,7 @@ public class CustomerNotFoundException extends RuntimeException {
 
 
     public CustomerNotFoundException() {
+
     }
 
     public CustomerNotFoundException(String msg) {
@@ -12,4 +13,3 @@ public class CustomerNotFoundException extends RuntimeException {
         this.message = msg;
     }
 }
-

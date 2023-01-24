@@ -1,10 +1,11 @@
 package az.atl.customer.service.impl;
 
+
 import az.atl.customer.dto.CustomerDto;
 import az.atl.customer.exception.CustomerAlreadyExistsException;
 import az.atl.customer.exception.CustomerNotFoundException;
 import az.atl.customer.mapper.CustomerMapper;
-import az.atl.customer.repository.CustomerRepository;
+import az.atl.customer.repository.CustomerRepo;
 import az.atl.customer.request.CustomerRequest;
 import az.atl.customer.service.CustomerService;
 import lombok.RequiredArgsConstructor;
@@ -18,7 +19,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 @Slf4j
 public class CustomerServiceImpl implements CustomerService {
-    private final CustomerRepository customerRepo;
+    private final CustomerRepo customerRepo;
     private final CustomerMapper customerMapper;
 
     @Override

@@ -1,7 +1,7 @@
 package az.atl.customer.mapper;
 
 import az.atl.customer.dto.CustomerDto;
-import az.atl.customer.model.Customers;
+import az.atl.customer.model.Customer;
 import az.atl.customer.request.CustomerRequest;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
@@ -10,9 +10,9 @@ import org.mapstruct.factory.Mappers;
 public interface CustomerMapper {
     CustomerMapper MAPPER = Mappers.getMapper(CustomerMapper.class);
 
-    CustomerDto entityToDto(Customers customer);
+    CustomerDto entityToDto(Customer customer);
 
-    Customers requestToModel(CustomerRequest customerRequest);
+    Customer requestToModel(CustomerRequest customerRequest);
 
 
 }
